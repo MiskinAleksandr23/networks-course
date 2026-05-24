@@ -43,6 +43,19 @@
   --timeout 1      таймаут ACK = 1 секунда
 ```
 
+
+Сервер:
+```
+python3 stop_wait_server.py --out received.txt --port 12000
+```
+
+
+Клиент:
+```
+python3 stop_wait_client.py input.txt --port 12000 --chunk-size 20 --timeout 1
+```
+
+
 Там видно что первый(нулевой точнее) пакет потерялся, пришлось перепослать.
 
 ![Браузер](images/1.jpg) 
